@@ -33,7 +33,6 @@ class ViewController: UIViewController {
     
   // MARK: - IB Actions
   @IBAction func startPressed(_ sender: UIButton) {
-
     if redLightView.alpha < 1 && yellowLightView.alpha < 1 {
       greenLightView.alpha = 0.3
       redLightView.alpha = 1
