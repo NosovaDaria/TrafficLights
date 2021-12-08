@@ -1,24 +1,88 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TrafficLights" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N2e-yD-pGp" userLabel="Top View">
+                                <rect key="frame" x="134.5" y="100.5" width="106" height="112"/>
+                                <color key="backgroundColor" red="0.92133218050003052" green="0.20308034669660699" blue="0.15248938291599279" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="N2e-yD-pGp" secondAttribute="height" multiplier="121:128" id="YyX-lO-fmp"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lXD-se-gnM" userLabel="Middle View">
+                                <rect key="frame" x="134.5" y="237.5" width="106" height="112"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ceq-ve-33z" userLabel="Bottom View">
+                                <rect key="frame" x="134.5" y="374.5" width="106" height="112"/>
+                                <color key="backgroundColor" red="0.41644487866746188" green="0.82572968499829069" blue="0.35939605815056785" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uxf-uT-xiO">
+                                <rect key="frame" x="77.5" y="577.5" width="220" height="39.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="220" id="Kha-6W-fpx"/>
+                                    <constraint firstAttribute="height" constant="39.5" id="jMD-a4-URB"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="START">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="21"/>
+                                    <color key="baseForegroundColor" red="0.84564979856794165" green="0.84755558702519707" blue="0.87663766169788859" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.21408686674410407" green="0.37553239632601537" blue="0.69135342282478263" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="startPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TsP-Kl-PGQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uxf-uT-xiO" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-50" id="0cX-gK-k5w"/>
+                            <constraint firstItem="lXD-se-gnM" firstAttribute="top" secondItem="N2e-yD-pGp" secondAttribute="bottom" constant="25" id="2pX-sX-7uw"/>
+                            <constraint firstItem="N2e-yD-pGp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="134.66999999999999" id="3Z2-rB-rX1"/>
+                            <constraint firstItem="ceq-ve-33z" firstAttribute="width" secondItem="lXD-se-gnM" secondAttribute="height" multiplier="121:128" id="E25-Aq-Plf"/>
+                            <constraint firstItem="lXD-se-gnM" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="HXM-2P-GW0"/>
+                            <constraint firstItem="ceq-ve-33z" firstAttribute="width" secondItem="lXD-se-gnM" secondAttribute="width" id="QQS-nF-EfR"/>
+                            <constraint firstItem="lXD-se-gnM" firstAttribute="width" secondItem="N2e-yD-pGp" secondAttribute="height" multiplier="121:128" id="Qh9-1O-hoo"/>
+                            <constraint firstItem="ceq-ve-33z" firstAttribute="height" secondItem="lXD-se-gnM" secondAttribute="height" id="RbK-G1-zos"/>
+                            <constraint firstItem="uxf-uT-xiO" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="XbI-xa-9TU"/>
+                            <constraint firstItem="ceq-ve-33z" firstAttribute="top" secondItem="lXD-se-gnM" secondAttribute="bottom" constant="25" id="cok-Fc-tpq"/>
+                            <constraint firstItem="lXD-se-gnM" firstAttribute="width" secondItem="N2e-yD-pGp" secondAttribute="width" id="dSA-kb-LYI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="N2e-yD-pGp" secondAttribute="trailing" constant="134.33000000000001" id="edg-kV-uli"/>
+                            <constraint firstItem="ceq-ve-33z" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="mXt-XD-BvO"/>
+                            <constraint firstItem="lXD-se-gnM" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-40" id="qBx-6D-Iy4"/>
+                            <constraint firstItem="lXD-se-gnM" firstAttribute="height" secondItem="N2e-yD-pGp" secondAttribute="height" id="r01-bV-J5E"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="greenLightView" destination="ceq-ve-33z" id="GVE-Pe-CWq"/>
+                        <outlet property="redLightView" destination="N2e-yD-pGp" id="cCp-Uw-9EZ"/>
+                        <outlet property="startButton" destination="uxf-uT-xiO" id="Gob-kN-M4q"/>
+                        <outlet property="yellowLightView" destination="lXD-se-gnM" id="Ftf-Yc-qMj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-199" y="-324"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
