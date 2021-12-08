@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,26 +13,26 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TrafficLights" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N2e-yD-pGp" userLabel="Top View">
-                                <rect key="frame" x="134.5" y="100.5" width="106" height="112"/>
+                                <rect key="frame" x="134.5" y="142.5" width="51" height="51"/>
                                 <color key="backgroundColor" red="0.92133218050003052" green="0.20308034669660699" blue="0.15248938291599279" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="N2e-yD-pGp" secondAttribute="height" multiplier="121:128" id="YyX-lO-fmp"/>
+                                    <constraint firstAttribute="width" secondItem="N2e-yD-pGp" secondAttribute="height" multiplier="1:1" id="YyX-lO-fmp"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lXD-se-gnM" userLabel="Middle View">
-                                <rect key="frame" x="134.5" y="237.5" width="106" height="112"/>
+                                <rect key="frame" x="134.5" y="218.5" width="51" height="51"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ceq-ve-33z" userLabel="Bottom View">
-                                <rect key="frame" x="134.5" y="374.5" width="106" height="112"/>
+                                <rect key="frame" x="134.5" y="294.5" width="51" height="51"/>
                                 <color key="backgroundColor" red="0.41644487866746188" green="0.82572968499829069" blue="0.35939605815056785" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uxf-uT-xiO">
-                                <rect key="frame" x="77.5" y="577.5" width="220" height="39.5"/>
+                                <rect key="frame" x="50" y="478.5" width="220" height="39.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="220" id="Kha-6W-fpx"/>
                                     <constraint firstAttribute="height" constant="39.5" id="jMD-a4-URB"/>
@@ -54,10 +54,8 @@
                             <constraint firstItem="uxf-uT-xiO" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="-50" id="0cX-gK-k5w"/>
                             <constraint firstItem="lXD-se-gnM" firstAttribute="top" secondItem="N2e-yD-pGp" secondAttribute="bottom" constant="25" id="2pX-sX-7uw"/>
                             <constraint firstItem="N2e-yD-pGp" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="134.66999999999999" id="3Z2-rB-rX1"/>
-                            <constraint firstItem="ceq-ve-33z" firstAttribute="width" secondItem="lXD-se-gnM" secondAttribute="height" multiplier="121:128" id="E25-Aq-Plf"/>
                             <constraint firstItem="lXD-se-gnM" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="HXM-2P-GW0"/>
                             <constraint firstItem="ceq-ve-33z" firstAttribute="width" secondItem="lXD-se-gnM" secondAttribute="width" id="QQS-nF-EfR"/>
-                            <constraint firstItem="lXD-se-gnM" firstAttribute="width" secondItem="N2e-yD-pGp" secondAttribute="height" multiplier="121:128" id="Qh9-1O-hoo"/>
                             <constraint firstItem="ceq-ve-33z" firstAttribute="height" secondItem="lXD-se-gnM" secondAttribute="height" id="RbK-G1-zos"/>
                             <constraint firstItem="uxf-uT-xiO" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="XbI-xa-9TU"/>
                             <constraint firstItem="ceq-ve-33z" firstAttribute="top" secondItem="lXD-se-gnM" secondAttribute="bottom" constant="25" id="cok-Fc-tpq"/>
@@ -77,7 +75,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-199" y="-324"/>
+            <point key="canvasLocation" x="-577" y="-439"/>
         </scene>
     </scenes>
     <resources>
